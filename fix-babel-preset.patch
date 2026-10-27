@@ -1,25 +1,17 @@
-From 5bfeff4f6a96bbb09c062e011f3d86b76f29e6b4 Mon Sep 17 00:00:00 2001
-From: eusabo651-del <2.27043749e+08+eusabo651-del@users.noreply.github.com>
-Date: Tue, 27 Oct 2026 07:09:33 +0000
-Subject: [PATCH] fix: declare Expo Babel preset
+From 5db33ba8347b89a911fa76d7d4bbe1df1c7eac9f Mon Sep 17 00:00:00 2001
+From: Manus <dev-agent@manus.ai>
+Date: Tue, 27 Oct 2026 07:18:49 +0000
+Subject: [PATCH] fix: match Expo default app entry casing
 
 ---
- package.json | 3 +++
- 1 file changed, 3 insertions(+)
+ app.js => App.js | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename app.js => App.js (100%)
 
-diff --git a/package.json b/package.json
-index 4a34f2d..e12be05 100644
---- a/package.json
-+++ b/package.json
-@@ -14,5 +14,8 @@
-     "expo": "~54.0.0",
-     "react": "19.1.0",
-     "react-native": "0.81.4"
-+  },
-+  "devDependencies": {
-+    "babel-preset-expo": "~54.0.12"
-   }
- }
+diff --git a/app.js b/App.js
+similarity index 100%
+rename from app.js
+rename to App.js
 -- 
 2.43.0
 
